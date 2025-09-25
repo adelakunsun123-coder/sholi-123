@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> shoilly - Freshness in Every Sip</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+    const btn = document.querySelector(".mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #FCE38A 0%, #F38181 50%, #6A45D1 100%);
+        }
+        .smoothie-bg {
+            background-image: url('shoili photos/blender.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+   <nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <span class="text-2xl font-bold text-orange-500 title-font">Shoilly.co</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#" class="text-gray-800 hover:text-orange-500">Home</a>
+        <a href="#about" class="text-gray-800 hover:text-orange-500">About</a>
+        <a href="#menu" class="text-gray-800 hover:text-orange-500">Menu</a>
+        <a href="#builder" class="text-gray-800 hover:text-orange-500">Smoothie Builder</a>
+        <a href="#contact" class="text-gray-800 hover:text-orange-500">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="outline-none mobile-menu-button">
+          <i data-feather="menu" class="w-6 h-6 text-gray-800"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="hidden mobile-menu px-6 pb-4 md:hidden">
+    <a href="#" class="block text-gray-800 py-2 hover:text-orange-500">Home</a>
+    <a href="#about" class="block text-gray-800 py-2 hover:text-orange-500">About</a>
+    <a href="#menu" class="block text-gray-800 py-2 hover:text-orange-500">Menu</a>
+    <a href="#builder" class="block text-gray-800 py-2 hover:text-orange-500">Smoothie Builder</a>
+    <a href="#contact" class="block text-gray-800 py-2 hover:text-orange-500">Contact</a>
+  </div>
+</nav>
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 title-font">Sip Freshness, Taste Happiness.</h1>
+                <p class="text-xl mb-8">100% natural juices, smoothies, and fruit treats made with love and care.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#builder" class="bg-white text-orange-500 px-8 py-3 rounded-full font-semibold hover:bg-orange-100 transition duration-300 text-center">Build Your Smoothie</a>
+                    <a href="#menu" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-orange-500 transition duration-300 text-center">Order Now</a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <div class="relative">
+                    <video class="w-full h-auto rounded-lg border-4 border-orange-500" autoplay muted loop><source src="shoili photos\vid sh.mp4" type="video/mp4"></video>
+                    <img src="shoili photos\kids.jpg"Fruit tray" class="absolute -bottom-10 -left-10 rounded-lg shadow-lg w-40 h-40 object-cover border-4 border-orange-500 transform -rotate-6">
+                    <img src="shoili photos\sided.jpg" alt="Smoothie" class="absolute -bottom-10 -right-5 rounded-lg shadow-lg w-60 h-40 object-cover border-4 border-orange-500 transform rotate-6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl text-center" data-aos="fade-up">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="check-circle" class="text-orange-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">100% Natural & Fresh</h3>
+                    <p class="text-gray-600">Only the freshest fruits with no artificial additives</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="x-circle" class="text-orange-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">No Preservatives</h3>
+                    <p class="text-gray-600">Pure ingredients, nothing artificial added</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="heart" class="text-orange-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Made With Love & Care</h3>
+                    <p class="text-gray-600">Every product crafted with passion and attention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="shoili photos\frigde.jpg" alt="About FreshBurst" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6 title-font">About Shoilly</h2>
+                    <p class="text-gray-700 mb-4">At Shoilly, we believe nature is the best recipe. That's why every cup, tray, and scoop is made with fresh fruits, vibrant flavors, and a touch of creativity.</p>
+                    <p class="text-gray-700 mb-6">From smoothies blended your way to handcrafted fruit trays, creamy fruit ice cream, and herbal juices that recharge your body, we're on a mission to make healthy living delicious.</p>
+                    <div class="bg-orange-100 p-4 rounded-lg border-l-4 border-orange-500">
+                        <p class="text-orange-800 font-medium">🍍 Fresh fruits, bold flavors, and a passion for wellness – that's the Shoilly promise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Menu -->
+    <section id="menu" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 title-font">Our Menu</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our delicious selection of fresh juices, smoothies, and fruit treats</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Smoothies -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('shoili photos/ice cream on bread.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i data-feather="droplet" class="text-orange-500 mr-2"></i>
+                            <h3 class="text-xl font-bold">Smoothies</h3>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Custom Blends – Pick your fruits, base, and boosters</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Pre-Made Favorites: PAPAYA- Disco, MANGO-Disco, GRAPE- Desire , Green Detox</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Fruit Trays -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('shoili photos/tray.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i data-feather="layers" class="text-orange-500 mr-2"></i>
+                            <h3 class="text-xl font-bold">Fruit Trays</h3>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Party-sized trays, mini trays, and custom arrangements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Perfect for events, birthdays, and family treats</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Fruit Ice Cream -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('shoili photos/icecream.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i data-feather="ice-cream" class="text-orange-500 mr-2"></i>
+                            <h3 class="text-xl font-bold">Fruit Ice Cream</h3>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Creamy, refreshing, and made with real fruits</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Flavors: Banana Swirl, Pineapple Cream, Mango Magic</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Herbal Juices -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('shoili photos/green.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i data-feather="leaf" class="text-orange-500 mr-2"></i>
+                            <h3 class="text-xl font-bold">Herbal Juices</h3>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Refreshing, energizing, and detoxifying</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1 w-4 h-4"></i>
+                                <span>Options: Ginger shot, tumeric Fresh, Lemon Detox</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smoothie Builder -->
+    <section id="builder" class="py-16 bg-orange-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 title-font">Custom Smoothie Builder</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">Your Smoothie, Your Way. Pick your ingredients and we'll blend it fresh – just for you.</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden max-w-4xl mx-auto" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-xl font-bold mb-6">Build Your Perfect Smoothie</h3>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">Fruits</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Banana</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Mango</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Strawberry</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Pineapple</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Grape</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Avocado</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">Base</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="base" class="form-radio h-5 w-5 text-orange-500" checked>
+                                    <span class="ml-2">Almond Milk</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="base" class="form-radio h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Coconut Water</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="base" class="form-radio h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Greek Yogurt</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="base" class="form-radio h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Orange Juice</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">Boosters</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Almond nut</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Protein</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Honey</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="form-checkbox h-5 w-5 text-orange-500">
+                                    <span class="ml-2">Date fruit</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button onclick="saveOrder('Banana + Mango + Honey')"
+                        class="w-full bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600">
+                         Add to Cart - ₦3,500
+                        </button>
+                    </div>
+                    
+                    <div class="md:w-1/2 smoothie-bg flex items-center justify-center p-8">
+                        <div class="bg-white bg-opacity-90 rounded-lg p-6 text-center">
+                            <i data-feather="smile" class="w-12 h-12 text-orange-500 mx-auto mb-4"></i>
+                            <h4 class="text-xl font-bold mb-2">Your Custom Creation</h4>
+                            <p class="text-gray-700 mb-4">Select your ingredients to see your smoothie come to life!</p>
+                            <div class="h-32 w-32 bg-orange-100 rounded-full mx-auto flex items-center justify-center">
+                                <i data-feather="loader" class="w-8 h-8 text-orange-500 animate-spin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 title-font">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from people who've experienced the FreshBurst difference</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Chioma</h4>
+                            <p class="text-gray-500 text-sm">Lagos</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The best smoothies in town – fresh, tasty, and healthy! I come here every morning before work."</p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Daniel</h4>
+                            <p class="text-gray-500 text-sm">Abuja</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Their fruit trays made my party unforgettable. Everyone loved it! The presentation was beautiful and fruits were so fresh."</p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-orange-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Amaka</h4>
+                            <p class="text-gray-500 text-sm">Port Harcourt</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The herbal juices give me life – especially the ginger detox. Perfect for my busy schedule and keeps me energized all day."</p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-6 title-font">Contact Us</h2>
+                    <p class="text-gray-700 mb-8">Got a craving? We're just a call away. Place an order for delivery.</p>
+                    
+                    <div class="space-y-6">
+                        
+                        <div class="flex items-start">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="phone" class="text-orange-500 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+234 812 623 2013</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="mail" class="text-orange-500 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-600">shoilly@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                <i data-feather="clock" class="text-orange-500 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Opening Hours</h4>
+                                <p class="text-gray-600">Monday - Saturday: 8am - 8pm<br>Sunday: 10am - 6pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/shoilly.co?utm_source=ig_web_button_share_sheet&igsh=NXMwd3lucnQ0bHMx" class="bg-gray-200 p-3 rounded-full hover:bg-orange-100 transition duration-300">
+                                <i data-feather="instagram" class="text-gray-700 w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="bg-gray-200 p-3 rounded-full hover:bg-orange-100 transition duration-300">
+                                <i data-feather="facebook" class="text-gray-700 w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="bg-gray-200 p-3 rounded-full hover:bg-orange-100 transition duration-300">
+                                <i data-feather="twitter" class="text-gray-700 w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="bg-gray-200 p-3 rounded-full hover:bg-orange-100 transition duration-300">
+                                <i data-feather="youtube" class="text-gray-700 w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold mb-6">Send Us a Message</h3>
+
+                            <form onsubmit="saveContact(event)">
+                            <div class="mb-4">
+                            <input id="contactName" type="text" placeholder="Your Name" required
+                             class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500">
+                            </div>
+                             <div class="mb-4">
+                             <input id="contactEmail" type="email" placeholder="Your Email" required
+                             class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500">
+                             </div>
+                            <div class="mb-4">
+                            <input id="contactPhone" type="tel" placeholder="Phone"
+                            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500">
+                            </div>
+                           <div class="mb-4">
+                           <textarea id="contactMessage" rows="4" placeholder="Message"
+                         class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500"></textarea>
+                         </div>
+                         <button type="submit" class="w-full bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600">
+                         Send Message
+                         </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 title-font">Shoilly.co</h3>
+                    <p class="text-gray-400">Freshness in every sip. Healthy, delicious, and made with love.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-white transition duration-300">Our Menu</a></li>
+                        <li><a href="#builder" class="text-gray-400 hover:text-white transition duration-300">Smoothie Builder</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Our Menu</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Smoothies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Fruit Trays</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Fruit Ice Cream</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Herbal Juices</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on new flavors and special offers.</p>
+                    
+                    <div class="flex">
+                     <input id="newsletterEmail" type="email" placeholder="Your email" required
+                     class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-900">
+                    <button onclick="saveNewsletter()" class="bg-orange-500 px-4 py-2 rounded-r-lg hover:bg-orange-600">
+                    <i data-feather="send" class="w-4 h-4"></i>
+                    </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Shoilly.co . All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwsgJ4KJKbFbXKy9g-I4Ge5s887MqEihfY8AQL6avZG0F1H_nyz9OMw4tIvr4mIQivZ/exec"; // paste your script URL here
+
+// --- CONTACT FORM ---
+async function saveContact(e) {
+  e.preventDefault();
+  let data = {
+    type: "Contact",
+    name: document.getElementById("contactName").value,
+    email: document.getElementById("contactEmail").value,
+    phone: document.getElementById("contactPhone").value,
+    message: document.getElementById("contactMessage").value
+  };
+  await fetch(SCRIPT_URL, { method: "POST", body: JSON.stringify(data) });
+  alert("Message sent!");
+  e.target.reset();
+}
+
+// --- SMOOTHIE ORDER ---
+async function saveOrder(order) {
+  let data = {
+    type: "Order",
+    name: "Customer",  // later connect to real inputs
+    email: "customer@email.com",
+    phone: "08012345678",
+    order: order
+  };
+  await fetch(SCRIPT_URL, { method: "POST", body: JSON.stringify(data) });
+  alert("Order submitted!");
+}
+
+// --- NEWSLETTER ---
+async function saveNewsletter() {
+  let email = document.getElementById("newsletterEmail").value;
+  let data = {
+    type: "Newsletter",
+    name: "",
+    email: email,
+    phone: "",
+    order: "Subscribed"
+  };
+  await fetch(SCRIPT_URL, { method: "POST", body: JSON.stringify(data) });
+  alert("Subscribed successfully!");
+  document.getElementById("newsletterEmail").value = "";
+}
+</script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
